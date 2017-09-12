@@ -1,0 +1,73 @@
+COnfiguration:
+	git config --global user.name "[name]" -Sets the name you want attached to your commit transactions
+	git config --global  user.email "[email address]" -Sets the email you want atached to your commit transactions
+	git config --global color.ui auto -Enables helpful colorization of command line output
+
+
+Create Repositories:
+	git init   - Initialize a git repository
+	git clone [url] - Downloads a project and its entire version history
+
+
+Make changes:
+	git status -Lists all new or modified files to be commited
+	git diff -Shows the differences not yet staged
+	git diff --staged -Shows  file differences between staging and the last file version
+	git reset [file] -Unstages the fike ,but preserves its content 
+	git commit -m "[descriptive message]" -Records file snapshots permanently in version history
+
+
+
+Group Changes:
+	git branch -Lists of all local branches in current repository
+	git branch [brach-name] - Create a new branch
+	git checkout [branch-name] -Switches to the specified branch and updates the working directory
+	git merge [branch] -Combines the specified branchs history into current branch
+	git branch -d [branch-name] -Delete the specified branch
+
+
+
+Review History:
+	git log -Lists of history for the current branch
+	git log --follow [file] -Lists version for a file ,including renames
+	git diff [first-branch]....[second-branch]-Shows content differences between two branches
+	
+
+
+Synchronize changes:
+	git fetch [bookmark] -Downloads all history from the repository bookmark
+	git push [alias][branch] -Uploads all local branch commits to Github
+	git pull -Downloads bookmark history and incorporates changes
+
+
+
+Save Fragments:
+	git stash -Temporarily stores all modified tracked files
+	git stash pop -Restores the most recently stashed file
+	git stash list-List of all stashed changesets
+	git stash drop -Discard the most recently changeset
+
+
+
+Redo Commits:
+	git reset [commit]-Undoes all commits afer [commit], preserving changes locally
+	git reset --hard [commit] -Discards all history and changes back to the specified commit
+
+
+
+
+
+git push --all -u (Pushing all branched to remote)
+
+git push -u origin feature_branch_name (Pushing normal branch to remote)
+
+git push origin --delete <branchName> (Deleting remote branch)
+
+git branch -d <branch_name> (Deleting local branch)
+
+git checkout -b [name_of_your_new_branch] (Create the branch on your local machine and switch in this branch)
+
+git push origin [name_of_your_new_branch] (Push the branch on github )
+
+git branch -m <newname> (Renaming a branch)
+
