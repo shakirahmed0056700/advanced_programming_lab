@@ -56,7 +56,7 @@ Redo Commits:
 
 
 
-
+***
 git push --all -u (Pushing all branched to remote)
 
 git push -u origin feature_branch_name (Pushing normal branch to remote)
@@ -69,5 +69,7 @@ git checkout -b [name_of_your_new_branch] (Create the branch on your local machi
 
 git push origin [name_of_your_new_branch] (Push the branch on github )
 
-git branch -m <newname> (Renaming a branch)
+git branch -m <newname> (Renaming a branch) ***
 
+
+ROll:1507118
